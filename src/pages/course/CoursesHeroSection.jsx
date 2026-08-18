@@ -5,14 +5,14 @@ import heroVideo from "../../assets/hero.mp4";
 import { FaArrowRight } from "react-icons/fa6";
 import { images } from "../../assets/Assets";
 
-const CareerHeroSection = () => {
+const CareerHeroSection = ({title,paragraph}) => {
   return (
     <>
       <div className="relative mt-14 min-h-150 overflow-hidden
                           sm:min-h-150 lg:min-h-150">
 
         <video src={heroVideo} autoPlay muted loop playsInline preload="auto"
-            className=" absolute inset-0 z-0 h-full w-full object-cover blur-lg"/>
+            className=" absolute inset-0 z-0 h-full scale-110 w-full object-cover blur-lg"/>
             
         <div className="absolute inset-0 z-1 bg-[#000000]/30" />
 
@@ -25,18 +25,15 @@ const CareerHeroSection = () => {
           <div className="flex w-full flex-col items-center justify-center
               text-center lg:w-1/2 lg:items-start lg:text-left ">
 
-            <h1
-              className="text-3xl font-bold text-white
-                         sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl ">   
-              Learn Full-Stack Web Development - Next-Gen MERN Stack Boot Camp
+            
+             <h1 className="text-3xl font-bold text-white
+                         sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl "> 
+              {title}  
             </h1>
 
-            <p
-              className="mt-4 max-w-2xl text-base leading-7 text-white m:text-lg sm:leading-8 ">
-              Comprehensive, mentor-led web development training. Hands-on
-              with MongoDB, Express, React, and Node.js. Build live
-              cloud-deployed web applications with 100% placement assistance.
-              Start coding your future today.
+            
+             <p className="mt-4 max-w-2xl text-base leading-7 text-white m:text-lg sm:leading-8 ">
+              {paragraph}
             </p>
 
             <button className="mt-6  w-full max-w-55 flex items-center justify-center gap-2
@@ -48,8 +45,8 @@ const CareerHeroSection = () => {
             </button>
           </div>
 
-          <div
-            className="mt-10 flex w-full items-center
+         
+           <div  className="mt-10 flex w-full items-center
                  justify-center lg:mt-0 lg:w-1/2">
             <motion.img
               src={images.heroImage}

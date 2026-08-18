@@ -2,12 +2,14 @@ import Navbar from "../../layout/Navbar";
 import Footer from "../../layout/Footer";
 
 import { FaUserGraduate, FaUserGear } from "react-icons/fa6";
-import { FaTerminal, 
-         FaLaptopCode,
-         FaHandshake, 
-         FaPaintBrush, 
-         FaServer,
-         FaChalkboardTeacher } from "react-icons/fa";
+import {
+  FaTerminal,
+  FaLaptopCode,
+  FaHandshake,
+  FaPaintBrush,
+  FaServer,
+  FaChalkboardTeacher
+} from "react-icons/fa";
 import { BsGraphUpArrow } from "react-icons/bs";
 
 
@@ -17,16 +19,98 @@ import ImageSlider from "./ImageSlider";
 import CourseOverview from "./CourseOverview";
 import CourseOutcome from "./CourseOutcome";
 import WhyEphorsys from "./WhyEphorsys";
-import CareerHeroSection from "./CareerHeroSection";
+import CoursesHeroSection from "./CoursesHeroSection";
 import { images } from "../../assets/Assets";
+
+const course = {
+    title: "MERN Stack Boot Camp",
+
+    description: (
+        <>
+          Master MongoDB, Express.js, React, and Node.js through a practical, project-based learning experience. This course takes you from the fundamentals of web development to building and deploying complete full-stack applications. 
+          <br /> <br /> 
+          You'll learn how to create responsive and interactive frontend interfaces with React, build scalable backend APIs using Node.js and Express, and manage application data using MongoDB. Along the way, you'll work with authentication, REST APIs, database integration, Git/GitHub, and cloud deployment.
+          <br /> <br />
+          Through hands-on projects, you'll learn how to connect frontend and backend systems, handle real-world application requirements, structure your code efficiently, and troubleshoot common development challenges. You'll also gain experience building applications from scratch and deploying them to the cloud.
+        </>
+    ),
+
+    details: [
+        {
+            title: "Frontend Development",
+            description:
+                "HTML, CSS, JavaScript, React, React Hooks, and responsive UI",
+        },
+        {
+            title: "Backend Development",
+            description:
+                "Node.js, Express.js, RESTful APIs, and server-side development",
+        },
+        {
+            title: "Database",
+            description:
+                "MongoDB, Mongoose, CRUD operations, and database design",
+        },
+        {
+            title: "Authentication",
+            description:
+                "Login, registration, JWT authentication, authorization, and protected routes",
+        },
+        {
+            title: "Full-Stack Integration",
+            description:
+                "Connect React applications with backend APIs and databases",
+        },
+        {
+            title: "Development Tools",
+            description:
+                "Git, GitHub, npm, VS Code, and modern development workflows",
+        },
+        {
+            title: "Deployment",
+            description:
+                "Deploy full-stack applications to cloud platforms",
+        },
+        {
+            title: "Real-World Projects",
+            description:
+                "Build practical applications that demonstrate your full-stack skills",
+        },
+        
+    ],
+};
+
+const Mernoutcomes = [
+    "Build responsive and interactive web applications using React.",
+    "Develop scalable REST APIs using Node.js and Express.js.",
+    "Design and manage databases using MongoDB and Mongoose.",
+    "Implement user authentication and authorization using JWT.",
+    "Connect frontend applications with backend APIs and databases.",
+    "Build complete full-stack applications from scratch.",
+    "Use Git and GitHub for version control and collaborative development.",
+    "Deploy full-stack applications to cloud platforms.",
+    "Debug applications and solve common real-world development problems.",
+    "Build practical projects for a professional portfolio.",
+    "Gain the skills and confidence needed for entry-level full-stack development roles"
+];
 
 const Mern = () => {
   return (
     <>
       <Navbar />
-      <CareerHeroSection/>
-      <CourseOverview/>
-      <CourseOutcome/>
+
+      <CoursesHeroSection
+        title="Learn Full-Stack Web Development - Next-Gen MERN Stack Boot Camp"
+        paragraph="Comprehensive, mentor-led web development training. Hands-on
+              with MongoDB, Express, React, and Node.js. Build live
+              cloud-deployed web applications with 100% placement assistance.
+              Start coding your future today."/>
+
+      <CourseOverview
+        description={course.description}
+        details={course.details} />
+
+      <CourseOutcome outcomes={Mernoutcomes} />
 
       <section className="py-15">
         <h1 className="text-center text-3xl font-bold mb-10">
@@ -120,10 +204,10 @@ const Mern = () => {
         </div>
 
       </section>
-       
-       <h1 className="text-center font-bold text-3xl">Practical Working Experience</h1>
-      <ImageSlider/>
-        <WhyEphorsys/>
+
+      <h1 className="text-center font-bold text-3xl">Practical Working Experience</h1>
+      <ImageSlider />
+      <WhyEphorsys />
       <Footer />
     </>
   );
