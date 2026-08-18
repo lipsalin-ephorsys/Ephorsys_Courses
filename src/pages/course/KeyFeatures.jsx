@@ -8,7 +8,7 @@ const KeyFeatures = ({ icon: Icon, title, subtitle, image }) => {
         className="absolute inset-0 h-full w-full object-cover scale-110
                   transition-transform duration-500 group-hover:scale-125 "/>
       
-       <div className=" absolute inset-0 bg-black/70 
+       <div className="absolute inset-0 bg-black/70 
                         transition-all duration-500 group-hover:bg-black/30 "/>
  
       <div className="relative z-10">
