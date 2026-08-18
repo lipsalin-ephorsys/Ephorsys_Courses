@@ -78,6 +78,8 @@ export default function CourseFloat() {
     <div
       className="
         relative
+        md:bottom-0
+        bottom-12
         w-full
         md:w-135
         h-82.5
