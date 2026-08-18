@@ -9,6 +9,9 @@ import industry from "./industry.jpg"
 
 import heroImage from "./HeroImage.png"
 import hero from "./Hero.png"
+import AIML from "./AIML.png"
+import datascience from './datascience.png';
+import dataanalyst from './dataanalyst.png'
 
 
 export const images={
@@ -21,7 +24,10 @@ export const images={
     placement,
     industry,
     heroImage,
-    hero
+    hero,
+    AIML,
+    datascience,
+    dataanalyst
 
 
 }

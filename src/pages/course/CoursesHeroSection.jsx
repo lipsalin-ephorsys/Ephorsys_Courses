@@ -5,7 +5,7 @@ import heroVideo from "../../assets/hero.mp4";
 import { FaArrowRight } from "react-icons/fa6";
 import { images } from "../../assets/Assets";
 
-const CareerHeroSection = ({title,paragraph}) => {
+const CareerHeroSection = ({title,paragraph,image}) => {
   return (
     <>
       <div className="relative mt-14 min-h-150 overflow-hidden
@@ -49,7 +49,7 @@ const CareerHeroSection = ({title,paragraph}) => {
            <div  className="mt-10 flex w-full items-center
                  justify-center lg:mt-0 lg:w-1/2">
             <motion.img
-              src={images.heroImage}
+              src={image}
               alt="MERN Stack"
               className="w-65 object-contain
                        sm:w-80 md:w-88 lg:w-100 xl:w-115"

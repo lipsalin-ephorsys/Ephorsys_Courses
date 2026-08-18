@@ -104,7 +104,8 @@ const Mern = () => {
         paragraph="Comprehensive, mentor-led web development training. Hands-on
               with MongoDB, Express, React, and Node.js. Build live
               cloud-deployed web applications with 100% placement assistance.
-              Start coding your future today."/>
+              Start coding your future today."
+        image={images.heroImage}/>
 
       <CourseOverview
         description={course.description}

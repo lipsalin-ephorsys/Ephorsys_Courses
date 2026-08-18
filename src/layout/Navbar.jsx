@@ -37,15 +37,18 @@ const Navbar = () => {
                          bg-gray-200/90 text-[#70C900]
                            rounded-xl w-48 p-2">
               
-                <Link className="block p-2 hover:bg-[#70C900] hover:text-black rounded-xl">
+                <Link to='/datanalyst'
+                className="block p-2 hover:bg-[#70C900] hover:text-black rounded-xl">
                   Data Analytics
                 </Link>
 
-                <Link className="block p-2 hover:bg-[#70C900] hover:text-black rounded-xl">
+                <Link to='/datascience'
+                 className="block p-2 hover:bg-[#70C900] hover:text-black rounded-xl">
                   Data Science
                 </Link>
 
-                <Link className="block p-2 hover:bg-[#70C900] hover:text-black rounded-xl">
+                <Link to='/aiml'
+                className="block p-2 hover:bg-[#70C900] hover:text-black rounded-xl">
                   AI/ML
                 </Link>
 
@@ -101,15 +104,18 @@ const Navbar = () => {
                   className="absolute left-0 top-full mt-4
                           bg-gray-300 text-[#70C900]
                             rounded-xl w-48 p-2">
-                  <Link className="block p-2 hover:bg-[#70C900] hover:text-black rounded-xl">
+                  <Link to='/datanalyst'
+                  className="block p-2 hover:bg-[#70C900] hover:text-black rounded-xl">
                     Data Analytics
                   </Link>
 
-                  <Link className="block p-2 hover:bg-[#70C900] hover:text-black rounded-xl">
+                  <Link to='/datascience'
+                        className="block p-2 hover:bg-[#70C900] hover:text-black rounded-xl">
                     Data Science
                   </Link>
 
-                  <Link className="block p-2 hover:bg-[#70C900] hover:text-black rounded-xl">
+                  <Link to='/aiml'
+                        className="block p-2 hover:bg-[#70C900] hover:text-black rounded-xl">
                     AI/ML
                   </Link>
 
