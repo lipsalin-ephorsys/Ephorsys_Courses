@@ -8,16 +8,13 @@ const OfferCard = (props) => {
         lg:max-w-105
         md:max-w-80
         max-w-95
-        mx-5
         rounded-3xl
         overflow-hidden
         p-px
-
         bg-linear-to-b
         from-white/10
         via-white/5
         to-[#70C900]/70
-
         transition-all
         duration-500
         hover:-translate-y-2
@@ -31,7 +28,7 @@ const OfferCard = (props) => {
           p-4
           bg-[#050505]
         ">
-                <div
+        <div
           className="
             absolute
             -bottom-12.5
@@ -159,18 +156,19 @@ const OfferCard = (props) => {
             border
             border-[#70C900]/50
             bg-[#70C900]/10
-            text-[#70C900]
             py-3
             font-semibold
-
-            transition-all
-            duration-300
-
-            hover:bg-[#70C900]
-            hover:text-black
-            hover:border-[#70C900]
-            hover:shadow-[0_0_25px_rgba(112,201,0,0.35)]
-          "
+        text-white        
+        bg-linear-to-r
+        from-black
+        via-[#70C900]
+        to-black
+        bg-size-[200%_100%]
+        bg-left
+        hover:bg-right
+        transition-[background-position]
+        duration-700
+        ease-in-out          "
         >
           Explore Courses
         </button>

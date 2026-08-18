@@ -28,7 +28,7 @@ const paragraphs = [
 
 export default function First() {
   return (
-    <div className="space-y-4 md:m-30 m-15 lg:w-150 md:w-125">
+    <div className="space-y-4 md:m-30 m-15 mt-25 lg:w-150 md:w-125">
       {paragraphs.map((paragraph, index) => (
         <motion.p
           key={index}
@@ -44,6 +44,7 @@ export default function First() {
           {paragraph.content}
         </motion.p>
       ))}
+
     </div>
   );
 }
