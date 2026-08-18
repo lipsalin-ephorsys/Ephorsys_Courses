@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-     <footer className="backdrop-blur-sm bg-gray-200/80 w-full">
+     <footer className="w-full bg-gray-200/80 backdrop-blur-sm">
        <div className="flex lg:flex-row flex-col justify-between ">
         <div className="px-6 md:px-10 lg:px-15 pt-4 lg:w-1/2">
          <h1 className="font-bold text-[#70C900] text-2xl">Ephorsys</h1>
@@ -41,7 +41,7 @@ const Footer = () => {
 
        <div className="text-[#70C900] m-8 md:m-5 shadow-sm shadow-[#B8D9BE]
                       bg-[#071B0A] flex flex-col md:flex-row justify-between
-                       gap-10 md:gap-40 md:text-sm p-10 lg:px-30 md:px-6 rounded-2xl ">
+                       gap-10 md:gap-20 md:text-sm p-10 lg:px-30 md:px-6 rounded-2xl ">
            
            <div className="lg:w-70 md:w-60">
               <h2 className="font-bold text-2xl pb-3 text-[#70C900]">Subscribe</h2>

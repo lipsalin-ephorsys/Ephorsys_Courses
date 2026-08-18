@@ -27,18 +27,10 @@ const ImageSlider = () => {
         {images.map((image, index) => (
           <div
             key={index}
-            className="flex h-64 items-center justify-center px-3"
-          >
-            <img
-              src={image}
-              alt=""
-              className="
-                h-full
-                w-full
-                rounded-2xl
-                object-cover
-              "
-            />
+            className="flex h-64 items-center justify-center px-3">
+            
+            <img src={image}  alt=""
+              className="h-full w-full rounded-2xl object-cover"/>
           </div>
         ))}
       </Slider>
