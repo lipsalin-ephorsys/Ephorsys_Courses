@@ -79,7 +79,7 @@ const  Slider = ({ children }) => {
               onClick={() => setCurrentIndex(index)}
               className={`h-2 rounded-full transition-all ${
                 currentIndex === index
-                  ? "w-6 bg-amber-400"
+                  ? "w-6 bg-[#70C900]"
                   : "w-2 bg-gray-300"
               }`}
             />
