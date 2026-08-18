@@ -9,16 +9,13 @@ import industry from "./industry.jpg"
 
 import heroImage from "./HeroImage.png"
 import hero from "./Hero.png"
-<<<<<<< HEAD
 import AIML from "./AIML.png"
 import datascience from './datascience.png';
 import dataanalyst from './dataanalyst.png'
-=======
 import award from "./award.png"
 import award1 from "./award1.png"
 import award2 from "./award2.png"
 
->>>>>>> feature/ananya
 
 
 export const images={
@@ -32,15 +29,12 @@ export const images={
     industry,
     heroImage,
     hero,
-<<<<<<< HEAD
     AIML,
     datascience,
-    dataanalyst
-=======
+    dataanalyst,
     award,
     award1,
     award2
->>>>>>> feature/ananya
 
 
 }
