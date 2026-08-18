@@ -3,7 +3,6 @@ import { motion } from "motion/react";
 import heroVideo from "../../assets/hero.mp4";
 
 import { FaArrowRight } from "react-icons/fa6";
-import { images } from "../../assets/Assets";
 
 const CareerHeroSection = ({title,paragraph,image}) => {
   return (
