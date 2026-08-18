@@ -9,6 +9,10 @@ import industry from "./industry.jpg"
 
 import heroImage from "./HeroImage.png"
 import hero from "./Hero.png"
+import award from "./award.png"
+import award1 from "./award1.png"
+import award2 from "./award2.png"
+
 
 
 export const images={
@@ -21,7 +25,10 @@ export const images={
     placement,
     industry,
     heroImage,
-    hero
+    hero,
+    award,
+    award1,
+    award2
 
 
 }

@@ -4,6 +4,8 @@ import Button from "../components/heroSection/Button.jsx"
 import First from "../components/heroAnimation/First"
 import Float from "../components/heroAnimation/Float"
 import OfferCard from "../components/heroSection/OfferCard.jsx"
+import Award from "../components/heroSection/Award.jsx"
+
 
 
 const HeroSection = () => {
@@ -30,11 +32,51 @@ const HeroSection = () => {
 
         </div>
       </div>
-      {/* <div className="bg-[#70C900] pt-8">
-        <h1 className="text-center font-bold text-3xl">Our Awards & <b className="font-bold text-white">Recognition</b></h1>
-        <p className="text-center mt-1 font-semibold text-xl">Celebrating excellence and innovation in our industry</p>
-      
-      </div> */}
+      <div className="bg-[#70C900] pt-8">
+  <h1 className="text-center font-bold text-3xl">
+    Our Awards & <b className="font-bold text-white">Recognition</b>
+  </h1>
+
+  <p className="text-center mt-1 font-semibold text-xl">
+    Celebrating excellence and innovation in our industry
+  </p>
+
+  <div className="w-full overflow-hidden mt-8 mx-10">
+    <div className="flex gap-6 animate-scroll w-max">
+
+      <Award
+        img={images.award}
+        para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magni facilis asperiores quis delectus iste error alias dolore quod voluptatibus!"
+      />
+
+      <Award
+        img={images.award1}
+        para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magni facilis asperiores quis delectus iste error alias dolore quod voluptatibus!"
+      />
+
+      <Award
+        img={images.award2}
+        para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magni facilis asperiores quis delectus iste error alias dolore quod voluptatibus!"
+      />
+
+      <Award
+        img={images.award}
+        para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magni facilis asperiores quis delectus iste error alias dolore quod voluptatibus!"
+      />
+
+      <Award
+        img={images.award1}
+        para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magni facilis asperiores quis delectus iste error alias dolore quod voluptatibus!"
+      />
+
+      <Award
+        img={images.award2}
+        para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magni facilis asperiores quis delectus iste error alias dolore quod voluptatibus!"
+      />
+
+    </div>
+  </div>
+</div>
     </>
   )
 }
