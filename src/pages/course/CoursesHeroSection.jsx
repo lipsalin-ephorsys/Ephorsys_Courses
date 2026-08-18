@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 
-import heroVideo from "../../assets/hero.mp4";
+import heroVideo from "../../assets/hero2.mp4";
 
 import { FaArrowRight } from "react-icons/fa6";
 
