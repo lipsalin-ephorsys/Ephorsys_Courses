@@ -53,7 +53,7 @@ const courses = [
   {
     icon: <SiPandas />,
     position:
-      "bottom-[65%] right-[35%] md:bottom-120 md:left-155 lg:bottom-120 lg:left-215 xl:top-35 xl:left-320",
+      "bottom-[65%] right-[35%] md:bottom-120 md:left-155 lg:bottom-120 lg:left-215 xl:top-35 xl:left-290",
     color: "bg-blue-600",
     iconColor: "text-white",
   },

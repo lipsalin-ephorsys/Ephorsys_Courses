@@ -8,6 +8,8 @@ import placement from "./placement.jpg"
 import industry from "./industry.jpg"
 
 import heroImage from "./HeroImage.png"
+import hero from "./Hero.png"
+
 
 export const images={
     backend,
@@ -18,7 +20,9 @@ export const images={
     career,
     placement,
     industry,
-    heroImage
+    heroImage,
+    hero
+
 
 }
 
