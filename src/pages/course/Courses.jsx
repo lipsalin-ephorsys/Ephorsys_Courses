@@ -1,24 +1,27 @@
-import React from 'react'
 import Footer from '../../layout/Footer'
-import CoursesHeroSection from './CoursesHeroSection'
 import Navbar from '../../layout/Navbar'
+
 import { images } from '../../assets/Assets'
 
-const Courses = () => {
-  return (
-    <>
-    <Navbar/>
+import CoursesHeroSection from './CoursesHeroSection'
+import CourseOffer from '../about/CourseOffer'
+import ContactSection from '../../components/ContactSection'
 
-      <CoursesHeroSection
-        title="Learn Full-Stack Web Development - Next-Gen MERN Stack Boot Camp"
-        paragraph="Comprehensive, mentor-led web development training. Hands-on
-              with MongoDB, Express, React, and Node.js. Build live
-              cloud-deployed web applications with 100% placement assistance.
-              Start coding your future today."
-        image={images.courseHero}/>
-        <Footer/>
-    </>
-  )
+const Courses = () => {
+    return (
+        <>
+            <Navbar />
+
+            <CoursesHeroSection
+                title="Learn. Build. Launch Your Tech Career."
+                paragraph="Master in-demand technology skills through practical, mentor-led courses. Build real-world projects, strengthen your portfolio, and gain the skills you need to succeed in the modern tech industry."
+                image={images.courseHero} />
+
+            <CourseOffer />
+            <ContactSection />
+            <Footer />
+        </>
+    )
 }
 
 export default Courses

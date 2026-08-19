@@ -3,7 +3,6 @@ const CourseOverview = ({ description, details }) => {
         <section className="bg-white px-6 py-16 md:px-16 lg:px-20">
             <div className="mx-auto max-w-6xl">
 
-                {/* Heading */}
                 <div className="mb-8">
                     <div className="mb-4 h-1.5 w-14 rounded-full bg-[#70C900]"></div>
 
@@ -12,14 +11,12 @@ const CourseOverview = ({ description, details }) => {
                     </h2>
                 </div>
 
-                {/* Description */}
                 <div className="max-w-5xl rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-8">
                     <p className="leading-8 text-[#020716]">
                         {description}
                     </p>
                 </div>
 
-                {/* Details */}
                 <div className="mt-10">
                     <h2 className="mb-6 text-2xl font-bold text-[#020716]">
                         Details :
