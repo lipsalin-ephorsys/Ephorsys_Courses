@@ -5,11 +5,14 @@ import First from "../components/heroAnimation/First"
 import Float from "../components/heroAnimation/Float"
 import OfferCard from "../components/heroSection/OfferCard.jsx"
 import Award from "../components/heroSection/Award.jsx"
-
+import { motion } from "framer-motion";
+import { useState } from "react"
+import CourseCard from "../components/heroSection/CourseCard.jsx"
 
 
 const HeroSection = () => {
-  // const image="https://images.unsplash.com/photo-1599725427295-6ed79ff8dbef?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  const [isPaused, setIsPaused] = useState(false);
+
   return (
     <>
       <BackImage bgImage={images.hero}>
@@ -32,51 +35,76 @@ const HeroSection = () => {
 
         </div>
       </div>
-      <div className="bg-[#70C900] pt-8">
-  <h1 className="text-center font-bold text-3xl">
-    Our Awards & <b className="font-bold text-white">Recognition</b>
-  </h1>
+      <div className="bg-[#93e035] pt-8">
+        <h1 className="text-center font-bold text-3xl">
+          Our Awards & <b className="font-bold text-white">Recognition</b>
+        </h1>
 
-  <p className="text-center mt-1 font-semibold text-xl">
-    Celebrating excellence and innovation in our industry
-  </p>
+        <p className="text-center mt-1 font-semibold text-xl">
+          Celebrating excellence and innovation in our industry
+        </p>
 
-  <div className="w-full overflow-hidden mt-8 mx-10">
-    <div className="flex gap-6 animate-scroll w-max">
+        <div className="w-full overflow-hidden mt-8 pb-6">
 
-      <Award
-        img={images.award}
-        para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magni facilis asperiores quis delectus iste error alias dolore quod voluptatibus!"
-      />
+          <motion.div
+            className="flex gap-6 w-max"
+            animate={{
+              x: isPaused ? undefined : ["0%", "-50%"],
+            }}
+            transition={{
+              duration: 35,
+              ease: "linear",
+              repeat: Infinity,
+            }}
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
+          >
 
-      <Award
-        img={images.award1}
-        para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magni facilis asperiores quis delectus iste error alias dolore quod voluptatibus!"
-      />
+            <Award
+              img={images.award}
+              para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magni facilis asperiores quis delectus iste error alias dolore quod voluptatibus!"
+            />
 
-      <Award
-        img={images.award2}
-        para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magni facilis asperiores quis delectus iste error alias dolore quod voluptatibus!"
-      />
+            <Award
+              img={images.award1}
+              para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magni facilis asperiores quis delectus iste error alias dolore quod voluptatibus!"
+            />
 
-      <Award
-        img={images.award}
-        para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magni facilis asperiores quis delectus iste error alias dolore quod voluptatibus!"
-      />
+            <Award
+              img={images.award2}
+              para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magni facilis asperiores quis delectus iste error alias dolore quod voluptatibus!"
+            />
 
-      <Award
-        img={images.award1}
-        para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magni facilis asperiores quis delectus iste error alias dolore quod voluptatibus!"
-      />
+            <Award
+              img={images.award}
+              para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magni facilis asperiores quis delectus iste error alias dolore quod voluptatibus!"
+            />
 
-      <Award
-        img={images.award2}
-        para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magni facilis asperiores quis delectus iste error alias dolore quod voluptatibus!"
-      />
+            <Award
+              img={images.award1}
+              para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magni facilis asperiores quis delectus iste error alias dolore quod voluptatibus!"
+            />
 
-    </div>
-  </div>
-</div>
+            <Award
+              img={images.award2}
+              para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magni facilis asperiores quis delectus iste error alias dolore quod voluptatibus!"
+            />
+
+          </motion.div>
+
+        </div>
+      </div>
+      <div className="bg-[#d9ebc7] pt-10">
+          <h1 className="font-bold text-4xl ml-12">Recommended Courses <b className="font-bold text-[#70C900]">Job Leading</b></h1>
+          <p className="text-xl font-semibold  text-gray-800 ml-12 mt-2">The most hands-on, practical, and intensive coding-led courses to fulfill your ambitions.</p>
+          <div className="mt-10 flex justify-center items-center flex-wrap lg:gap-3 gap-5"> 
+          <CourseCard image={images.course} heading="MERN STACK" rating="4.7(3000 Student)" date="17th Aug 2026" duration="8 month" students="30 student"/>
+          <CourseCard image={images.course1} heading="DATA ANALYTICS" rating="4.7(3000 Student)" date="17th Aug 2026" duration="8 month" students="30 student"/>
+          <CourseCard image={images.course2} heading="DATA SCIENCE" rating="4.7(3000 Student)" date="17th Aug 2026" duration="8 month" students="30 student"/>
+          <CourseCard image={images.course3} heading="AI/ML" rating="4.7(3000 Student)" date="17th Aug 2026" duration="8 month" students="30 student"/>
+
+      </div>
+      </div>
     </>
   )
 }

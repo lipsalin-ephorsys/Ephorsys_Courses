@@ -15,6 +15,10 @@ import dataanalyst from './dataanalyst.png'
 import award from "./award.png"
 import award1 from "./award1.png"
 import award2 from "./award2.png"
+import course from "./course.png"
+import course1 from "./course1.png"
+import course2 from "./course2.png"
+import course3 from "./course3.png"
 
 import about from "./about.png"
 
@@ -36,8 +40,12 @@ export const images={
     award,
     award1,
     award2,
-    about
+    about,
 
+    course,
+    course1,
+    course2,
+    course3
 
 }
 

@@ -3,9 +3,8 @@ const Award = (props) => {
     <div
       className="
         bg-white
-        w-[85vw]
-        sm:w-[60vw]
-        md:w-[40vw]
+        w-[80vw]
+        md:w-[45vw]
         lg:w-[30vw]
         shrink-0
         p-3
@@ -17,7 +16,7 @@ const Award = (props) => {
       <div className="w-full h-48 sm:h-52 md:h-56 overflow-hidden rounded-xl">
         <img
           src={props.img}
-          alt="Course"
+          alt="Award"
           className="w-full h-full object-cover"
         />
       </div>

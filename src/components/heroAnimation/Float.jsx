@@ -46,14 +46,14 @@ const courses = [
   {
     icon: <SiTensorflow />,
     position:
-      "top-[42%] left-[52%] md:top-22 md:left-135 lg:top-10 lg:left-180 xl:top-10 xl:left-280",
+      "top-[42%] left-[52%] md:top-22 md:left-135 lg:top-10 lg:left-180 xl:top-10 xl:left-275",
     color: "bg-orange-500",
     iconColor: "text-white",
   },
   {
     icon: <SiPandas />,
     position:
-      "bottom-[65%] right-[35%] md:bottom-120 md:left-155 lg:bottom-120 lg:left-215 xl:top-35 xl:left-290",
+      "bottom-[65%] right-[35%] md:bottom-120 md:left-155 lg:bottom-120 lg:left-215 xl:top-35 xl:left-287",
     color: "bg-blue-600",
     iconColor: "text-white",
   },
@@ -109,9 +109,9 @@ export default function CourseFloat() {
             className={`
               w-12 h-12
               sm:w-14 sm:h-14
-              md:w-15 md:h-15
-              lg:w-20 lg:h-20
-
+              md:w-13 md:h-13
+              lg:w-14 lg:h-14
+               flex justify-center items-center
               ${course.color}
 
               flex
