@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes ,Route} from 'react-router-dom'
-import Navbar from './layout/Navbar'
 import Home from './pages/Home'
 import Mern from './pages/course/Mern'
 import AIML from './pages/course/Ai-ml'
