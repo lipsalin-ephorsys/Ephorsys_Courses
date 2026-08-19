@@ -1,4 +1,5 @@
 import { images } from "../../assets/Assets"
+import Contact from "../../components/ContactSection"
 import Footer from "../../layout/Footer"
 import Navbar from "../../layout/Navbar"
 import CoursesHeroSection from "../course/CoursesHeroSection"
@@ -20,7 +21,7 @@ const About = () => {
       <CourseOffer />
       <Whoweare />
       <Team />
-
+<Contact/>
       <Footer />
     </>
   )

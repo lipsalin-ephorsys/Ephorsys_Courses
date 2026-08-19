@@ -5,18 +5,21 @@ import First from "../components/heroAnimation/First"
 import Float from "../components/heroAnimation/Float"
 import OfferCard from "../components/heroSection/OfferCard.jsx"
 import Award from "../components/heroSection/Award.jsx"
+import { useNavigate } from "react-router-dom"
 
 
 
 const HeroSection = () => {
-  // const image="https://images.unsplash.com/photo-1599725427295-6ed79ff8dbef?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+
+  const navigate = useNavigate()
   return (
     <>
       <BackImage bgImage={images.hero}>
         <div>
           <First />
           <div className="relative md:bottom-19 md:left-30 bottom-13 left-13 lg:w-full w-50 ">
-            <Button button="Explore Our Courses" />
+            <Button button="Explore Our Courses"
+             onClick={()=>navigate('/coursemain')} />
           </div>
           <Float />
         </div>
