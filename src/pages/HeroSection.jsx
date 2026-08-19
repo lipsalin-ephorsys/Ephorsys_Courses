@@ -8,6 +8,8 @@ import Award from "../components/heroSection/Award.jsx"
 import { motion } from "framer-motion";
 import { useState } from "react"
 import CourseCard from "../components/heroSection/CourseCard.jsx"
+import Background from "../components/heroSection/Background.jsx"
+import ClientsSectionDemo from "../components/ui/ClientsSectionDemo.jsx"
 
 
 const HeroSection = () => {
@@ -98,12 +100,20 @@ const HeroSection = () => {
           <h1 className="font-bold text-4xl ml-12">Recommended Courses <b className="font-bold text-[#70C900]">Job Leading</b></h1>
           <p className="text-xl font-semibold  text-gray-800 ml-12 mt-2">The most hands-on, practical, and intensive coding-led courses to fulfill your ambitions.</p>
           <div className="mt-10 flex justify-center items-center flex-wrap lg:gap-3 gap-5"> 
-          <CourseCard image={images.course} heading="MERN STACK" rating="4.7(3000 Student)" date="17th Aug 2026" duration="8 month" students="30 student"/>
-          <CourseCard image={images.course1} heading="DATA ANALYTICS" rating="4.7(3000 Student)" date="17th Aug 2026" duration="8 month" students="30 student"/>
-          <CourseCard image={images.course2} heading="DATA SCIENCE" rating="4.7(3000 Student)" date="17th Aug 2026" duration="8 month" students="30 student"/>
-          <CourseCard image={images.course3} heading="AI/ML" rating="4.7(3000 Student)" date="17th Aug 2026" duration="8 month" students="30 student"/>
+          <CourseCard image={images.course} heading="MERN STACK" rating="4.7(3000 Student)" date="17th Aug 2026" duration="8 month" students="30 student" page="/mern"/>
+          <CourseCard image={images.course1} heading="DATA ANALYTICS" rating="4.7(3000 Student)" date="17th Aug 2026" duration="8 month" students="30 student" page="/datanalyst"/>
+          <CourseCard image={images.course2} heading="DATA SCIENCE" rating="4.7(3000 Student)" date="17th Aug 2026" duration="8 month" students="30 student" page="/datascience"/>
+          <CourseCard image={images.course3} heading="AI/ML" rating="4.7(3000 Student)" date="17th Aug 2026" duration="8 month" students="30 student" page="/aiml"/>
 
       </div>
+      </div>
+
+      <div className="mt-9">
+        <Background/>
+      </div>
+      <div>
+         <h1>Recant Rating & Reviews By Learners</h1>
+         <ClientsSectionDemo/>
       </div>
     </>
   )
