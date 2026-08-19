@@ -12,6 +12,7 @@ import hero from "./Hero.png"
 import AIML from "./AIML.png"
 import datascience from './datascience.png';
 import dataanalyst from './dataanalyst.png'
+import about from "./about.png"
 
 
 export const images={
@@ -27,7 +28,8 @@ export const images={
     hero,
     AIML,
     datascience,
-    dataanalyst
+    dataanalyst,
+    about
 
 
 }
