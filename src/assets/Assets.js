@@ -21,6 +21,7 @@ import course2 from "./course2.png"
 import course3 from "./course3.png"
 
 import about from "./about.png"
+import courseHero from"./courseHero.png"
 
 
 export const images={
@@ -41,7 +42,7 @@ export const images={
     award1,
     award2,
     about,
-
+    courseHero,
     course,
     course1,
     course2,

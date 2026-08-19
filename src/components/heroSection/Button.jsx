@@ -2,7 +2,9 @@
 const Button = (props) => {
   return (
     <>
-     <button  className="
+     <button 
+     onClick={props.onClick}
+      className="
         md:px-6 px-3 py-3
         rounded-xl
         font-semibold
@@ -17,6 +19,7 @@ const Button = (props) => {
         transition-[background-position]
         duration-700
         ease-in-out
+        cursor-pointer
       ">
         {props.button}
     </button> 

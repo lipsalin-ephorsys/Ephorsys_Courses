@@ -21,6 +21,7 @@ import CourseOutcome from "./CourseOutcome";
 import WhyEphorsys from "./WhyEphorsys";
 import CoursesHeroSection from "./CoursesHeroSection";
 import { images } from "../../assets/Assets";
+import ContactSection from "../../components/ContactSection";
 
 const course = {
     title: "AI & Machine Learning  Boot Camp",
@@ -215,6 +216,7 @@ const AIML = () => {
             <h1 className="text-center font-bold text-3xl">Practical Working Experience</h1>
             <ImageSlider />
             <WhyEphorsys />
+            <ContactSection/>
             <Footer />
         </>
     );

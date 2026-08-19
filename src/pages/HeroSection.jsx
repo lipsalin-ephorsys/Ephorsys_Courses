@@ -9,17 +9,21 @@ import { motion } from "framer-motion";
 import { useState } from "react"
 import CourseCard from "../components/heroSection/CourseCard.jsx"
 
+import { useNavigate } from "react-router-dom"
+
 
 const HeroSection = () => {
   const [isPaused, setIsPaused] = useState(false);
 
+  const navigate = useNavigate()
   return (
     <>
       <BackImage bgImage={images.hero}>
         <div>
           <First />
           <div className="relative md:bottom-19 md:left-30 bottom-13 left-13 lg:w-full w-50 ">
-            <Button button="Explore Our Courses" />
+            <Button button="Explore Our Courses"
+             onClick={()=>navigate('/coursemain')} />
           </div>
           <Float />
         </div>
