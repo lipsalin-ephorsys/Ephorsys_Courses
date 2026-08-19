@@ -4,7 +4,7 @@ import heroVideo from "../../assets/hero2.mp4";
 
 import { FaArrowRight } from "react-icons/fa6";
 
-const CareerHeroSection = ({title,paragraph,image}) => {
+const CoursesHeroSection = ({title,paragraph,image}) => {
   return (
     <>
       <div className="relative mt-14 min-h-150 overflow-hidden
@@ -70,4 +70,4 @@ const CareerHeroSection = ({title,paragraph,image}) => {
   );
 };
 
-export default CareerHeroSection;
+export default CoursesHeroSection;
