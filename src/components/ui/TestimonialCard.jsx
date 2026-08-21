@@ -48,7 +48,7 @@ const TestimonialCard = ({ testimonial, index }) => {
     <motion.div
       className="sticky w-full"
       style={{
-        top: `${20 + index * 25}px`,
+        top: "20px",
       }}
       initial={{
         opacity: 0,
@@ -81,7 +81,6 @@ const TestimonialCard = ({ testimonial, index }) => {
           sm:p-6
         "
       >
-        {/* Green bottom glow */}
         <div
           className="
             pointer-events-none
@@ -96,7 +95,6 @@ const TestimonialCard = ({ testimonial, index }) => {
         />
 
         <div className="relative z-10">
-          {/* User */}
           <div className="flex items-center gap-3 sm:gap-4">
             <div
               className="
@@ -144,7 +142,6 @@ const TestimonialCard = ({ testimonial, index }) => {
             </div>
           </div>
 
-          {/* Rating */}
           <div className="my-4 flex items-center gap-2">
             <span className="text-sm font-bold text-white sm:text-base">
               {testimonial.rating.toFixed(1)}
@@ -168,7 +165,6 @@ const TestimonialCard = ({ testimonial, index }) => {
             </div>
           </div>
 
-          {/* Quote */}
           {testimonial.quote && (
             <p
               className="
@@ -201,7 +197,6 @@ const ClientsSection = ({
     <section
       className="
         w-full
-        h-200
         overflow-hidden
         bg-white
         py-14
@@ -286,7 +281,6 @@ const ClientsSection = ({
               </span>
             </div>
 
-            {/* Heading */}
             <h2
               className="
                 max-w-xl
@@ -332,7 +326,6 @@ const ClientsSection = ({
               {description}
             </p>
 
-            {/* Stats */}
             <div
               className="
                 mt-2
@@ -352,7 +345,6 @@ const ClientsSection = ({
               ))}
             </div>
 
-            {/* Buttons */}
             <div
               className="
                 mt-3
@@ -412,16 +404,19 @@ const ClientsSection = ({
             </div>
           </div>
 
-          {/* RIGHT SIDE */}
-          <div className="relative flex w-full flex-col gap-5">
-            {testimonials.map((testimonial, index) => (
-              <TestimonialCard
-                key={`${testimonial.name}-${index}`}
-                testimonial={testimonial}
-                index={index}
-              />
-            ))}
-          </div>
+          <div className="relative w-full">
+  {testimonials.map((testimonial, index) => (
+    <div
+      key={`${testimonial.name}-${index}`}
+      className="relative mb-5 last:mb-0 lg:mb-3"
+    >
+      <TestimonialCard
+        testimonial={testimonial}
+        index={index}
+      />
+    </div>
+  ))}
+</div>
         </div>
       </div>
     </section>

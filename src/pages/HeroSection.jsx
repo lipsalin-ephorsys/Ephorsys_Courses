@@ -12,6 +12,7 @@ import Background from "../components/heroSection/Background.jsx"
 import ClientsSectionDemo from "../components/ui/ClientsSectionDemo.jsx"
 
 import { useNavigate } from "react-router-dom"
+import WhyChooseUs from "../components/ui/WhyChooseUs.jsx"
 
 
 const HeroSection = () => {
@@ -115,9 +116,12 @@ const HeroSection = () => {
       <div className="mt-9">
         <Background/>
       </div>
-      <div>
-         <h1>Recant Rating & Reviews By Learners</h1>
+      <div className="">
          <ClientsSectionDemo/>
+      </div>
+
+      <div>
+        <WhyChooseUs />
       </div>
     </>
   )
