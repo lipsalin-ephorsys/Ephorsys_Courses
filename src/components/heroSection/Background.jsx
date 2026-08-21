@@ -27,17 +27,14 @@ const Background = () => {
     return (
         <div className="relative w-full min-h-120 overflow-hidden">
 
-            {/* Background */}
             <img
                 src={images.background}
                 alt=""
                 className="absolute inset-0 w-full h-full object-cover"
             />
 
-            {/* Content */}
             <div className="relative z-10 flex flex-col lg:flex-row items-center lg:items-start justify-between gap-10 lg:gap-16 px-6 sm:px-10 md:px-16 lg:px-20 py-16">
 
-                {/* Text */}
                 <div className="w-full max-w-150 space-y-4 text-center lg:text-left">
                     {paragraphs.map((paragraph, index) => (
                         <motion.p
@@ -60,7 +57,6 @@ const Background = () => {
                     ))}
                 </div>
 
-                {/* YouTube Video */}
                 <motion.div
                     className="w-full max-w-115 aspect-video"
                     animate={{

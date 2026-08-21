@@ -202,7 +202,6 @@ const WhyChooseUs = () => {
   return (
     <section className="w-full bg-gray-200 py-10">
 
-      {/* Section Heading */}
       <div className="mb-2 text-center">
        
         <h2 className="mt-1 text-2xl font-bold text-black md:text-3xl">
@@ -218,7 +217,6 @@ const WhyChooseUs = () => {
         </p>
       </div>
 
-      {/* Cards */}
       <div
         className="relative w-full overflow-hidden"
         style={{ height: 470 }}
@@ -240,7 +238,6 @@ const WhyChooseUs = () => {
           );
         })}
 
-        {/* Navigation */}
         <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-2">
           <button
             onClick={() => handleMove(-1)}

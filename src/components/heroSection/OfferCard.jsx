@@ -131,10 +131,8 @@ const OfferCard = (props) => {
           </div>
         </div>
 
-        {/* Divider */}
         <div className="relative my-5 h-px bg-white/10" />
 
-        {/* Description */}
         <p
           className="
             relative
@@ -146,7 +144,6 @@ const OfferCard = (props) => {
           {props.descp}
         </p>
 
-        {/* Button */}
         <button
           className="
             relative

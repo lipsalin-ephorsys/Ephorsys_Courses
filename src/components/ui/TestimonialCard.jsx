@@ -232,7 +232,6 @@ const ClientsSection = ({
             xl:gap-20
           "
         >
-          {/* LEFT SIDE */}
           <div
             className="
               flex
@@ -244,7 +243,6 @@ const ClientsSection = ({
               lg:self-start
             "
           >
-            {/* Tag */}
             <div
               className="
                 flex
